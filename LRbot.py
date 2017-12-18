@@ -20,6 +20,9 @@ def on_chat_message(msg):
                 bot.sendMessage(chat_id, ("Oggi cominci male!"))
         elif 'Sei pronto' in msgText:
                 bot.sendMessage(chat_id, ("Che ansia"))
+        #aggiungere path della gif
+        elif 'LR' in msgText:
+                bot.sendVideo(chat_id,open("path gif",'rb'))
         else: 
                 bot.sendMessage(chat_id, ("mi fai venire l'ansia"))
 
